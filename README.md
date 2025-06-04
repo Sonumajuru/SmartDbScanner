@@ -27,6 +27,7 @@ Built with:
 
 ## 🧩 Folder Structure
 
+```text
 ├── backend/
 │   ├── crawler.js       # Scans database for leaks
 │   ├── server.js        # Express backend
@@ -38,7 +39,7 @@ Built with:
 ├── Dockerfile
 ├── docker-compose.yml
 └── package.json
-
+```
 ---
 
 ## 🔧 Local Setup (No Docker)

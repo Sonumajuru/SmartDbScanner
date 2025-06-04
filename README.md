@@ -81,3 +81,15 @@ docker-compose up --build
 Scanner UI: http://localhost:3000
 AI Assistant: http://localhost:3000/chat
 ```
+
+## Contributing
+
+Feel free to use, modify, and contribute to this project! If you'd like to suggest changes, fix bugs, or add new features:
+
+1. **Fork** the repository
+2. **Create** a new branch (`git checkout -b feature-name`)
+3. **Commit** your changes (`git commit -am 'Add some feature'`)
+4. **Push** to the branch (`git push origin feature-name`)
+5. **Create a Pull Request**
+
+Your contributions are welcome and appreciated!

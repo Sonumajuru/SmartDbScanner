@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Chat() {
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState(null);
-  const [form, setForm] = useState({ host: '', user: '', password: '', database: '' });
+  const [form, setForm] = useState({ host: '', port: '', user: '', password: '', database: '' });
 
   const askAgent = async () => {
     const res = await fetch('http://localhost:3001/api/agent', {
@@ -20,6 +20,7 @@ export default function Chat() {
       <h1>AI DB Assistant</h1>
       <textarea rows={4} value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder="Ask me about your DB security..." /><br />
       <input name="host" placeholder="Host" onChange={(e) => setForm({ ...form, host: e.target.value })} /><br />
+      <input name="port" placeholder="Port" onChange={(e) => setForm({ ...form, port: e.target.value })} /><br />
       <input name="user" placeholder="User" onChange={(e) => setForm({ ...form, user: e.target.value })} /><br />
       <input name="password" placeholder="Password" type="password" onChange={(e) => setForm({ ...form, password: e.target.value })} /><br />
       <input name="database" placeholder="Database" onChange={(e) => setForm({ ...form, database: e.target.value })} /><br />

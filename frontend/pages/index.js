@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
-  const [form, setForm] = useState({ host: '', user: '', password: '', database: '' });
+  const [form, setForm] = useState({ host: '', port: '', user: '', password: '', database: '' });
   const [issues, setIssues] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -23,6 +24,7 @@ export default function Home() {
     <div style={{ padding: 20 }}>
       <h1>Database Leak Scanner</h1>
       <input name="host" placeholder="Host" onChange={handleChange} /><br />
+      <input name="port" placeholder="Port" onChange={handleChange} /><br />
       <input name="user" placeholder="User" onChange={handleChange} /><br />
       <input name="password" placeholder="Password" type="password" onChange={handleChange} /><br />
       <input name="database" placeholder="Database" onChange={handleChange} /><br />
@@ -39,7 +41,7 @@ export default function Home() {
           )}
         </div>
       )}
-      <a href="/chat">Go to AI Assistant →</a>
+      <Link href="/chat">Go to AI Assistant →</Link>
     </div>
   );
 }

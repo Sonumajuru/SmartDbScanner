@@ -10,6 +10,7 @@ Built with:
 
 ---
 
+
 ## 🚀 Features
 
 - 🔍 Scan any MySQL DB for insecure patterns (e.g., unencrypted sensitive columns)
